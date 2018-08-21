@@ -1,0 +1,43 @@
+.jumbotron
+{
+	opacity: 0;
+}
+
+#navBox
+{
+	opacity: 0;
+}
+
+.nav
+{
+	margin-bottom: 2em;
+}
+
+p
+{
+	text-align: justify;
+}
+
+a
+{
+	text-decoration: none; 
+	border-bottom: 1px solid rgba(0, 123, 255, 0);
+	
+	-webkit-transition: border 500ms ease;
+	-moz-transition: border 500ms ease;
+	-ms-transition: border 500ms ease;
+	-o-transition: border 500ms ease;
+	transition: border 500ms ease; 
+}
+
+a:hover
+{
+	text-decoration: none; 
+	color: #007bff;
+	border-bottom: 1px solid rgba(0, 123, 255, 1);
+}
+
+a:visited, a:link, a:active
+{
+	text-decoration: none; 
+}
