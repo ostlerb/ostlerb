@@ -30,6 +30,11 @@ a
 	transition: border 500ms ease; 
 }
 
+a, a:active, a:focus 
+{
+   outline: none;
+}
+
 a:hover
 {
 	text-decoration: none; 
