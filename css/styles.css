@@ -10,7 +10,7 @@
 
 .nav
 {
-	margin-bottom: 2em;
+	margin-bottom: 2rem;
 }
 
 p
@@ -45,4 +45,10 @@ a:hover
 a:visited, a:link, a:active
 {
 	text-decoration: none; 
+}
+
+.card
+{
+	min-width: 13rem;
+	margin-bottom: 1.5rem;
 }
