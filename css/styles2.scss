@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+$opacityval: 0;
+
+.jumbotron
+{
+	opacity: $opacityval;
+	background: none;
+}
+
+#navBox
+{
+	opacity: $opacityval;
+}
+
+.nav
+{
+	margin-bottom: 2rem;
+}
+
+p
+{
+	text-align: justify;
+}
+
+a
+{
+	text-decoration: none; 
+	border-bottom: 1px solid rgba(0, 123, 255, 0);
+	
+	-webkit-transition: border 500ms ease;
+	-moz-transition: border 500ms ease;
+	-ms-transition: border 500ms ease;
+	-o-transition: border 500ms ease;
+	transition: border 500ms ease; 
+	
+	&:active, &:focus
+	{
+		outline: none;
+	}
+	
+	&:hover
+	{
+		text-decoration: none; 
+		color: #007bff;
+		border-bottom: 1px solid rgba(0, 123, 255, 1);
+	}
+	
+	&:visited, &:link, &:active
+	{
+		text-decoration: none; 
+	}
+}
+
+.card
+{
+	min-width: 13rem;
+	margin-bottom: 1.5rem;
+}

@@ -1,12 +1,15 @@
+<!-- Hey, you! Yeah, you; the one looking at my source code! Feel free to peruse, but I'm watching you, bud. - Bricker -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bricker Ostler: A Personal Website</title>
+	<title>Bricker Ostler</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -18,46 +21,57 @@
 
 <div class="container">
 	<div class="jumbotron">
-		<h1 style="text-align: center">Bricker Ostler</h1>
-		<h4 style="text-align: center">A Personal Website</h4>
+		<h1 class="display-2" style="text-align: center;">Bricker Ostler</h1>
 	</div>
 	
 	<div id="navBox">
 		<ul class="nav nav-tabs" id="mainNav" role="tablist">
-		<li class="nav-item">
-			<a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-		</li>
+			<li class="nav-item">
+				<a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="cv-tab" data-toggle="tab" href="#cv" role="tab" aria-controls="cv" aria-selected="false">CV</a>
+			</li>
 		</ul>
 		
 		<div class="tab-content" id="mainNavTabContent">
 			<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
 				<div class="row">
 					<div class="col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="images/profile_img.JPG">
-							<div class="card-body">
-								<h4 class="card-title">My name's Bricker</h4>
-								<p class="card-text">Welcome to my abode.</p>
+						<div class="animated fadeInUp">
+							<div class="card">
+								<img class="card-img-top" src="images/profile_img.JPG">
 							</div>
 						</div>
 					</div>
 				
 					<div class="col-md-8">
-						<p>
-							I'm currently a senior at <a href="http://www.lawrence.edu/" target="_blank"><i>Lawrence University</i></a>, where I'm majoring in mathematics 
-							and minoring in both physics and German. 
-						</p>
-						
-						<p>For now, this website is a virtual catalogue of my musings.</p>
+						<div class="animated fadeInRight">
+							<p>
+								Welcome! My name's Bricker. A little about me: I was born and raised near White Bear Lake, MN and graduated from <a href="http://www.lawrence.edu/" target="_blank"><i>Lawrence University</i></a> with a mathematics major and minors in German and physics.
+								Currently, I work at Los Alamos National Lab as a post-baccalaureate researcher in particle accelerator physics. 
+							</p>
+							<p>
+								My interests lie at the intersection of mathematics, physics, and computer science; I'm currently applying to computational mathematics and physics graduate schools for Autumn 2020. My research is widespread, ranging from computational group theoretical 
+								studies of oscillator networks to the uses of undulator radiation as a current profile diagnostic. At the heart of it all, though, is computation as a method to illuminate physical problems. 
+							</p>
+							
+							<p>This website is completely custom-coded via Bootstrap 3 and old-fashioned html/css/javascript; feel free to glance at the source code.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			
-			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-			
+			<div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
+				<div class="col-md-12" style="border: 1px solid gray; margin-bottom:20px;">
+					<img id="cv" src="images/CV-0.png">
+				</div>
+				
+				<div class="col-md-12" style="border: 1px solid gray; margin-bottom:20px;">
+					<img id="cv" src="images/CV-1.png">
+				</div>
+				
+				<i>Updated 11/14/19</i>
 			</div>
 		</div>
 	</div>
