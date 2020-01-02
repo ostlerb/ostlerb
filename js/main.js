@@ -8,6 +8,14 @@ function isMobile()
 	return false;
 }
 
+$(window).on('resize', function() 
+{
+    if($(window).width() < 600) 
+	{
+        document.body.style.overflow = "auto";
+    }
+})
+
 $(window).on("load", function() 
 {
 	mobile = isMobile();
@@ -29,7 +37,7 @@ function overflowAuto()
 function overflowHidden()
 {
 	mobile = isMobile();
-	if (!mobile)
+	if (!mobile && $(window).width() >= 600)
 	{
 		document.body.style.overflow = "hidden";
 	}
